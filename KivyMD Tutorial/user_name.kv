@@ -1,0 +1,15 @@
+<Root>
+    BoxLayout:
+        size:root.size
+        orientation:'vertical'
+        MDTextField:
+            hint_text:"Enter Username :"
+            helper_text:"username is case sensitive"
+            #helper_text_mode:'persistent'
+            helper_text_mode:'on_focus'
+            icon_right:'android'
+            icon_right_color:app.theme_cls.primary_palette
+            #icon_left:'android'
+            pos_hint:{'center_x':0.5,'center_y':0.5}
+            size_hint_x:None
+            width:300

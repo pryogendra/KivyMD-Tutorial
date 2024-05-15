@@ -1,0 +1,20 @@
+#:import Factory kivy.factory.Factory
+<Root>
+    BoxLayout:
+        size:root.size
+        orientation:'vertical'
+        MDTopAppBar:
+            title:'ToolBar Application'
+            left_action_items:[["menu",lambda x: app.menu_click()]]
+            right_action_items:[['clock'],["dots-vertical"]]
+            #elevation:10
+        MDLabel:
+            text:"HellWorld"
+            halign:'center'
+        MDBottomAppBar:
+            MDTopAppBar:
+                #title:'Bottom'
+                left_action_items:[["coffee"]]
+                icon:'language-python'
+                #right_action_items:[['clock'],["dots-vertical"]]
+#elevation:10
